@@ -18,7 +18,7 @@ public class Main {
             btn.click();//
 
         }
-      //  WebElement spanElement = driver.findElement(By.cssSelector("span.highlight[wordnr='0']"));
+      ///  WebElement spanElement = driver.findElement(By.cssSelector("span.highlight[wordnr='0']"));
       //  WebElement input = driver.findElement(By.id("inputfield"));
       //  WebElement divElement = driver.findElement(By.id("words"));
         //List<WebElement> spanElements = divElement.findElements(By.tagName("span"));
