@@ -15,7 +15,7 @@ public class Main {
         driver.get("https://cpstest.org/");
         WebElement btn = driver.findElement(By.id("start"));
         for(int i = 1;i<500;i++){
-            btn.click();
+            btn.click();//
 
         }
       //  WebElement spanElement = driver.findElement(By.cssSelector("span.highlight[wordnr='0']"));
