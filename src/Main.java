@@ -16,11 +16,7 @@ public class Main {
         WebElement btn = driver.findElement(By.id("start"));
         for(int i = 1;i<500;i++){
             btn.click();
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+
         }
       //  WebElement spanElement = driver.findElement(By.cssSelector("span.highlight[wordnr='0']"));
       //  WebElement input = driver.findElement(By.id("inputfield"));
