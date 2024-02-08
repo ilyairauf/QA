@@ -8,25 +8,22 @@ import java.util.List;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://cpstest.org/");
-        WebElement btn = driver.findElement(By.id("start"));
-        for(int i = 1;i<500;i++){
-            btn.click();//
+        driver.get("https://10fastfingers.com/typing-test/english");
 
-        }
-      ///  WebElement spanElement = driver.findElement(By.cssSelector("span.highlight[wordnr='0']"));
-      //  WebElement input = driver.findElement(By.id("inputfield"));
-      //  WebElement divElement = driver.findElement(By.id("words"));
-        //List<WebElement> spanElements = divElement.findElements(By.tagName("span"));
-        //int iterations = spanElements.size();
-        //for (WebElement spanElemen : spanElements) {
- //           input.sendKeys(spanElemen.getText() + " ");
-//
-        //};
+        WebElement spanElement = driver.findElement(By.cssSelector("span.highlight[wordnr='0']"));
+        WebElement input = driver.findElement(By.id("inputfield"));
+        WebElement divElement = driver.findElement(By.id("words"));
+        List<WebElement> spanElements = divElement.findElements(By.tagName("span"));
+        int iterations = spanElements.size();
+
+        for (WebElement spanElemen : spanElements) {
+            input.sendKeys(spanElemen.getText() + " ");
+
+        }}}
 
 
 
@@ -39,11 +36,3 @@ public class Main {
         //WebElement nextbtn2 = driver.findElement();
         //passinput.sendKeys();
         //nextbtn2.click();
-
-
-
-
-
-
-        }
-    }
