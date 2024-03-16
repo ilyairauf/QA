@@ -1,0 +1,33 @@
+using System;
+using System.Threading;
+
+namespace task123
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string query = Console.ReadLine();
+            string a = "";
+            string b = "";
+            char k = '';
+            for (int i = 0; i< query.Length; i++){
+                if (query[i] != ' ')
+                {
+                    a += query[i];
+                }
+                else
+                {
+                    
+                    for (int k = i+3; k < query.Length; k++)
+                    {
+                        b += query[k];
+                    }
+                }
+                Console.WriteLine(a, b);
+            }
+
+
+        }
+    }
+}
